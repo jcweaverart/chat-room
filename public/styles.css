@@ -1,0 +1,56 @@
+body {
+    background:white;
+    color: black;
+    font-family: sans-serif, arial, helvetica;
+    display: flex;
+}
+
+* {
+    box-sizing: border-box;
+    color: #707070;
+}
+
+.site-wrap {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border: 5px solid #aaa;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-box {
+    display: flex;
+    flex-grow: 1;
+    
+}
+
+.chat-box > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0px;
+    margin: 0px;
+    overflow-y: scroll;
+}
+
+.chat-box > ul >li {
+    padding: 5px;
+    margin: 0px;
+    border-bottom: 1px solid #cdcd;
+}
+
+.chat-form > input {
+    width: 100%;
+    padding: 10px; 
+    margin: 0px;
+    border: none;
+    border-top: 3px solid #aaa;
+    font-size: 25px;
+    color: #707070;
+}
+
+.chat-form > input:focus {
+    outline: none;
+}
